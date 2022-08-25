@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Mono%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CIBM+Plex+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBarlow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.0.1' media='all' />
+
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+        <div class="bg">
+
+        </div><!--bg-->
+		<div class="container">
+            <div class="thumb">
+                <img src="img/THUMB-768x432.webp" alt="">
+            </div><!--thumb-->
+
+            <div class="box-button">
+                <a href="" class="button"><img src="img/cursor.png" alt="">ASSISTA AGORA MESMO!</a>
+            </div><!--box-button-->
+
+            <p>© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Meta, Inc.</p>
+
+            <div class="politicas">
+                <a href="">Políticas de Privacidade</a> <b>/</b> <a href="">Termos de uso</a>
+            </div><!--politicas-->
+		</div><!--container-->
+	</main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script>
+        (function(b) {
+            var a = {
+                version: "0.0.1",
+                history_api: typeof history.pushState !== "undefined",
+                init: function() {
+                    b.location.hash = "#no-back";
+                    a.configure();
+                },
+                hasChanged: function() {
+                    if (b.location.hash == "#no-back") {
+                        b.location.hash = "#";
+                        b.location.href = "https://iurimeira.com/bmc-br01/"; //LINK PARA REDIRECIONAR AQUI
+                    }
+                },
+                checkCompat: function() {
+                    if (b.addEventListener) {
+                        b.addEventListener("hashchange", a.hasChanged, false);
+                    } else {
+                        if (b.attachEvent) {
+                            b.attachEvent("onhashchange", a.hasChanged);
+                        } else {
+                            b.onhashchange = a.hasChanged;
+                        }
+                    }
+                },
+                configure: function() {
+                    if (b.location.hash == "#no-back") {
+                        if (this.history_api) {
+                            history.pushState(null, "", "#");
+                        } else {
+                            b.location.hash = "#";
+                            b.location.href = "https://iurimeira.com/bmc-br01/"; //LINK PARA REDIRECIONAR AQUI
+                        }
+                    }
+                    a.checkCompat();
+                    a.hasChanged();
+                }
+            };
+            if (typeof define === "function" && define.amd) {
+                define(function() {
+                    return a;
+                });
+            } else {
+                if (typeof module === "object" && module.exports) {
+                    module.exports = a;
+                } else {
+                    b.noback = a;
+                }
+            }
+            a.init();
+        }(window));
+    </script>
+
+<div id="ays_tooltip"><p>O conteúdo desta página é protegido por direitos autorais.</p></div>
+
+
+</body>
+</html>
