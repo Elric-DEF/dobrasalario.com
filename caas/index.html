@@ -221,6 +221,7 @@
 
 	<script>
 	    var containerVsl = document.querySelector(".vsl")
+	    var avisoMobile = document.querySelector(".aviso-mobile")
 	    const DELAY_TIME_IN_SECONDS = 7;
 	    const DELAY_ELEMENTS_CLASS = 'delay';
 
@@ -237,6 +238,7 @@
 		  if (data.message == 'panda_timeupdate') {
 		    if (data.currentTime >= DELAY_TIME_IN_SECONDS) {
 		      showElements(DELAY_ELEMENTS_CLASS, 'block');
+			avisoMobile.style.display = "initial"
 			containerVsl.style.height = "auto"
 		    }
 		  }
