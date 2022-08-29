@@ -238,8 +238,13 @@
 		  if (data.message == 'panda_timeupdate') {
 		    if (data.currentTime >= DELAY_TIME_IN_SECONDS) {
 		      showElements(DELAY_ELEMENTS_CLASS, 'block');
-			avisoMobile.style.display = "initial"
-			containerVsl.style.height = "auto"
+				if(window.screen.width <= 760){
+					avisoMobile.style.display = "block"
+				}
+				if(window.screen.width > 760){
+					avisoMobile.style.display = "none"
+				}
+				containerVsl.style.height = "auto"
 		    }
 		  }
 		});
@@ -266,7 +271,7 @@
 				{
 					if (showed == false) {
 						showed = true;
-						$('.modal').show();
+						$('.modal').fadeIn();
 						console.log()
 					}
 				}
