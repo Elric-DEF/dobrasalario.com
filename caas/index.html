@@ -220,7 +220,8 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<script>
-	    const DELAY_TIME_IN_SECONDS = 637;
+	    var containerVsl = document.querySelector(".vsl")
+	    const DELAY_TIME_IN_SECONDS = 7;
 	    const DELAY_ELEMENTS_CLASS = 'delay';
 
 	    function showElements(className, value) {
@@ -236,6 +237,7 @@
 		  if (data.message == 'panda_timeupdate') {
 		    if (data.currentTime >= DELAY_TIME_IN_SECONDS) {
 		      showElements(DELAY_ELEMENTS_CLASS, 'block');
+			containerVsl.style.height = "auto"
 		    }
 		  }
 		});
