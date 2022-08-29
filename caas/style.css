@@ -23,6 +23,10 @@ span{
     color: #fed200;
 }
 
+.delay{
+    display: none;
+}
+
 .modal {
     z-index: 999999;
     width: 100%;
@@ -498,7 +502,7 @@ h3.headline-bonus{
 
     a.button{
         font-size: 13px;
-        padding: 20px 70px;
+        padding: 20px 60px;
     }
 
     .selecionados h2{
@@ -529,10 +533,6 @@ h3.headline-bonus{
 
     /*DEPOIMENTOS*/
 
-    .aviso-mobile{
-        display: block;
-    }
-
     .aviso{
         display: none;
     }
@@ -560,7 +560,7 @@ h3.headline-bonus{
 
     .depoimento-single{
         width: 42%;
-        padding-top: 56.25%;
+        padding-top: 75%;
         margin-bottom: 20px;
     }
 
@@ -594,7 +594,7 @@ h3.headline-bonus{
     }
 
     .depoimentos a.button{
-        padding: 20px 45px;
+        padding: 20px 35px;
     }
 
     /*****/
@@ -680,8 +680,8 @@ h3.headline-bonus{
 
     .beneficios .box-button,
     .garantia .box-button{
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .beneficios a.button,
