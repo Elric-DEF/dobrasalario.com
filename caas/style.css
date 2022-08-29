@@ -24,7 +24,7 @@ span{
 }
 
 .delay{
-    display: none;
+    display: none !important;
 }
 
 .modal {
