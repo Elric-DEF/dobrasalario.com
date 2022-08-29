@@ -47,100 +47,11 @@
                     </div><!--email-single-->
                 </div><!--emails-->
             </div><!--verifique-email-->
-
-            <div class="cta-suporte">
-                <p>Para otimizar o seu atendimento e finalizar a sua compra, fale com o nosso suporte. Clique no botão abaixo:</p>
-            </div><!--cta-suporte-->
-
-            <div class="box-button">
-                <a href="" class="button"><img src="img/telegram-plane-3770622 (1).png" alt="">QUERO FALAR COM O SUPORTE</a>
-            </div><!--box-button-->
-		</div><!--container-->
+	</div><!--container-->
 	</main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-
-    <script>
-        var imagens = document.querySelectorAll("img.depoimentos")
-        var container = document.querySelector(".container")
-        var imagemGrande = document.createElement("img")
-        
-        console.log(typeof(altura))
-        console.log(imagens)
-        for (var i = 0 ; i < imagens.length; i++) {
-            imagens[i].addEventListener('click' , imagenFull , false ) ; 
-        }
-
-        function imagenFull (){
-            console.log(this.src)
-            var overlay = document.createElement("div")
-
-            imagemGrande.src = this.src
-            imagemGrande.style.width = "100%"
-            imagemGrande.style.height = "auto"
-
-            overlay.classList.add("overlay")
-            overlay.style.height = "2600px"
-            container.appendChild(overlay)
-            container.appendChild(imagemGrande)
-            console.log(container.clientHeight)
-        }
-    </script>
-
-	<script>
-        (function(b) {
-            var a = {
-                version: "0.0.1",
-                history_api: typeof history.pushState !== "undefined",
-                init: function() {
-                    b.location.hash = "#no-back";
-                    a.configure();
-                },
-                hasChanged: function() {
-                    if (b.location.hash == "#no-back") {
-                        b.location.hash = "#";
-                        b.location.href = "https://iurimeira.com/bmc-br01/"; //LINK PARA REDIRECIONAR AQUI
-                    }
-                },
-                checkCompat: function() {
-                    if (b.addEventListener) {
-                        b.addEventListener("hashchange", a.hasChanged, false);
-                    } else {
-                        if (b.attachEvent) {
-                            b.attachEvent("onhashchange", a.hasChanged);
-                        } else {
-                            b.onhashchange = a.hasChanged;
-                        }
-                    }
-                },
-                configure: function() {
-                    if (b.location.hash == "#no-back") {
-                        if (this.history_api) {
-                            history.pushState(null, "", "#");
-                        } else {
-                            b.location.hash = "#";
-                            b.location.href = "https://iurimeira.com/bmc-br01/"; //LINK PARA REDIRECIONAR AQUI
-                        }
-                    }
-                    a.checkCompat();
-                    a.hasChanged();
-                }
-            };
-            if (typeof define === "function" && define.amd) {
-                define(function() {
-                    return a;
-                });
-            } else {
-                if (typeof module === "object" && module.exports) {
-                    module.exports = a;
-                } else {
-                    b.noback = a;
-                }
-            }
-            a.init();
-        }(window));
-    </script>
 <script src="protecao_Dados.js"></script>
 
 <div id="ays_tooltip"><p>O conteúdo desta página é protegido por direitos autorais.</p></div>
