@@ -195,8 +195,8 @@
 			<div class="footer">
 				<img loading="lazy" width="256" height="112" src="img/botmillion-footer.webp" alt="BotMillion">
 				<div class="links">
-					<a href="">Política de Privacidade</a>
-					<a href="">Termos Gerais e Condições de Uso</a>
+					<a target="_blank" href="https://dobrasalario.com/politicas/">Política de Privacidade</a>
+					<a target="_blank" href="https://dobrasalario.com/termos/">Termos Gerais e Condições de Uso</a>
 				</div><!--links-->
 			</div><!--footer-->
 		</div><!--container-->
@@ -280,59 +280,7 @@
 		</script>
 
 
-	<script>
-        (function(b) {
-            var a = {
-                version: "0.0.1",
-                history_api: typeof history.pushState !== "undefined",
-                init: function() {
-                    b.location.hash = "#no-back";
-                    a.configure();
-                },
-                hasChanged: function() {
-                    if (b.location.hash == "#no-back") {
-                        b.location.hash = "#";
-                        b.location.href = "https://iurimeira.com/bmc-br01/"; //LINK PARA REDIRECIONAR AQUI
-                    }
-                },
-                checkCompat: function() {
-                    if (b.addEventListener) {
-                        b.addEventListener("hashchange", a.hasChanged, false);
-                    } else {
-                        if (b.attachEvent) {
-                            b.attachEvent("onhashchange", a.hasChanged);
-                        } else {
-                            b.onhashchange = a.hasChanged;
-                        }
-                    }
-                },
-                configure: function() {
-                    if (b.location.hash == "#no-back") {
-                        if (this.history_api) {
-                            history.pushState(null, "", "#");
-                        } else {
-                            b.location.hash = "#";
-                            b.location.href = "https://iurimeira.com/bmc-br01/"; //LINK PARA REDIRECIONAR AQUI
-                        }
-                    }
-                    a.checkCompat();
-                    a.hasChanged();
-                }
-            };
-            if (typeof define === "function" && define.amd) {
-                define(function() {
-                    return a;
-                });
-            } else {
-                if (typeof module === "object" && module.exports) {
-                    module.exports = a;
-                } else {
-                    b.noback = a;
-                }
-            }
-            a.init();
-        }(window));
-    </script>
+
 
 <div id="ays_tooltip"><p>O conteúdo desta página é protegido por direitos autorais.</p></div>
 
